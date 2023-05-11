@@ -18,14 +18,14 @@ const style = {
     p: 4,
 };
 
-export default function LoginModal() {
+export default function SignupModal() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     return (
         <div>
-            <Button onClick={handleOpen} className={'bg-blue-400 text-white border p-1 px-4 rounded mr-3'}>Sign In</Button>
+            <Button onClick={handleOpen} className={'border p-1 px-4 rounded'}>Sign Up</Button>
             <Modal
                 open={open}
                 onClose={handleClose}
