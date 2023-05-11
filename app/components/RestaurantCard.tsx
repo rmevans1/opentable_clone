@@ -25,10 +25,9 @@ export default function RestaurantCard({restaurant}: Props) {
                         <div>
                             {restaurant.reviews.length}
                         </div>
-                        <!--
                         <Stars reviews={restaurant.reviews} />
                         <p className="ml-2">{restaurant.reviews.length} review{restaurant.reviews.length === 1 ? "":"s"}</p>
-                        -->
+
                     </div>
                     <div className="flex text-reg font-light capitalize">
                         <p className=" mr-3">{restaurant.cuisine.name}</p>
