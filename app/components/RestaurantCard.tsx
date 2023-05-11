@@ -8,7 +8,6 @@ interface Props {
 }
 
 export default function RestaurantCard({restaurant}: Props) {
-    console.log(restaurant.reviews);
     return (
         <div
             className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer"
