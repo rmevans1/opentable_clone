@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {RestaurantCardType} from "../page";
+import {RestaurantCardType} from "@/app/page";
 import Price from "@/app/components/Price";
 import Stars from "@/app/components/Stars";
 
@@ -8,6 +8,7 @@ interface Props {
 }
 
 export default function RestaurantCard({restaurant}: Props) {
+    console.log(restaurant.reviews);
     return (
         <div
             className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer"
